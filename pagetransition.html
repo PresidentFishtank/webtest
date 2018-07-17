@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<title>page transition</title>
+<link href="css/keyframes.css" rel="stylesheet"/>
+<link href="css/w3.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+
+<style>
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+}
+
+.decorate{
+  background-color: blue;
+  margin-bottom: 20px;
+  height:300px;
+}
+</style>
+
+</head>
+<body>
+<!--
+ <div class="index my-page" id="main">
+   <header class="w3-container my-padding my-grey page-section page-section-fadein ">
+     <h1> Page Transition</h1>
+     <p>test</p>
+   </header>
+   <main class="page-section page-section-fadeinup">
+     <section class="w3-container my-padding-section my-light">
+       <h2><a href="./page/page-1.html">Page Demo 1</a></h2>
+       <p>test</p>
+     </section>
+     <section class="w3-container my-padding-section my-light">
+       <h2><a href="./page/page-2.html">Page Demo 2</a></h2>
+       <p>test</p>
+     </section>
+     <section class="w3-container my-padding-section my-light">
+       <h2><a href="./page/page-3.html">Page Demo 3</a></h2>
+       <p>test</p>
+     </section>
+     <section class="w3-container my-padding-section my-light">
+       <h2><a href="./page/page-4.html">Page Demo 4</a></h2>
+       <p>test</p>
+     </section>
+     <section class="w3-container my-padding-section my-light">
+       <h2><a href="./page/page-5.html">Page Demo 5</a></h2>
+       <p>testest</p>
+     </section>
+  </main>
+
+  <footer class="w3-container w3-orange my-padding">
+    <p>Copyright &copy; Tedir Ghazali. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.smoothState.min.js"></script>
+  <script src="js/script.js"></script>
+-->
+  <div class="m-scene" id="main">
+    <div class="m-header scene_element scene_element--fadein decorate">
+      testestestestestestestestestestestesttestestestestestestestestestestestesttestestestestestestestestestestestest
+    </div>
+    <div class="m-page scene_element scene_element--fadeinup decorate">
+      testestestestestestestestestestestesttestestestestestestestestestestestesttestestestestestestestestestestestest
+    </div>
+  </div>
+  <a href="C:\Users\nnasi\Downloads\Design\Web Making\fun.html">Click here</a>
+</body>
+</html>
