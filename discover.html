@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Scrolling speed - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage demo scrolling speed." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scrolling,speed,scrollingSpeed" />
+	<meta name="Resource-type" content="Document" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/keyframes.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/pageTransitions.css">
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<!--<link rel="stylesheet" type="text/css" href="examples.css" />-->
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+  <body >
+		<div class="m-scene" id="">
+			<div class="menubar scene_element scene_element--fadein">
+				<a href="architecture.html">Architecture</a>
+				<a href="discover.html" class="current" style="color:#F18FFF;">Discover</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		<div id="fullpage" class="">
+			<div class="section scene_element scene_element--fadein indexbody" id="section0">
+				<div class="" >
+					<a href="index.html"><h1>Discover</h1></a>
+				</div>
+
+			</div>
+			<div class="section scene_element scene_element--fadein" id="section1">
+			    <div class="slide" id="slide1">
+					<div class="intro speakerbox">
+						<h1 class="speakertitle"><a href="pagetransition.html">DIY Speaker</a></h1>
+					</div>
+				</div>
+
+			    <div class="slide scene_element scene_element--fadein" id="slide2">
+					<h1>Slide 2</h1>
+				</div>
+				<div class="slide scene_element scene_element--fadein" id="slide3">
+				<h1>Slide 3</h1>
+			</div>
+
+			</div>
+			<div class="section scene_element scene_element--fadein japancover" id="section2">
+				<div class="intro ">
+					<h1><a href="index.html">Japan 2018</a></h1>
+				</div>
+			</div>
+			<div class="section scene_element scene_element--fadein" id="section3">
+				<div class="intro">
+					<h1><a href="index.html">You're Welcome</a></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="assets/js/jquery.smoothState.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+        <!--Scrolling-->
+        <script type="text/javascript" src="dist/fullpage.js"></script>
+        <script type="text/javascript" src="examples.js"></script>
+
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                /*sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],*/
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: []
+            });
+        </script>
+
+
+  </body>
+</html>

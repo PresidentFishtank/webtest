@@ -13,20 +13,22 @@ body {
   body {
     font-size: 1em; } }
 /* line 38, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
+/*
 a {
   color: #4472B9;
   text-decoration: none;
   transition: color 0.15s ease-in; }
-  /* line 42, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
   a:hover {
     color: #3D67A6; }
-  /* line 45, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
   a:active, a:focus {
     color: #222; }
-  /* line 49, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
   a:visited {
     color: #673ab7; }
+*/
 
+a {
+  text-decoration: none;
+}
 /* line 54, /Users/miguelperez/Sites/csstricks/source/stylesheets/layout.css.scss */
 code {
   font-weight: bold; }

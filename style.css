@@ -1,4 +1,4 @@
-body {
+.indexbody {
   margin: 0;
   padding: 0;
   background : -moz-linear-gradient(104.92% 5.58% -155.54deg,rgba(137, 255, 169, 1) 0%,rgba(109, 243, 191, 1) 16.01%,rgba(91, 235, 204, 1) 30.32%,rgba(85, 232, 209, 1) 40.71%,rgba(103, 216, 214, 1) 46.98%,rgba(202, 127, 243, 1) 83.59%,rgba(241, 91, 255, 1) 100%);
@@ -57,6 +57,21 @@ body {
                                 supported by Chrome and Opera */
 }
 
+.date {
+  font-size: 100px;
+  background-color: transparent;
+  color:white;
+  float: none;
+  text-align: center;
+  line-height: .77em;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
 .options {
   overflow: hidden;
   background-color: transparent;
@@ -82,4 +97,96 @@ body {
 .options div a:hover{
   color: #F18FFF;
   text-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.menubar {
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  width:100%;
+  top:5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+
+.menubar a {
+  margin: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.menubar a:hover {
+  margin: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+.current {
+  font-weight: 400;
+  font-size: 30px;
+
+}
+
+.slide {
+  background-image: url("gallery/SpeakerCover.jpg");
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  background-position: right;
+}
+
+.speakertitle {
+  color:white;
+  background-color: gray;
+  width: 60%;
+  border-radius: 3px;
+}
+
+.intro h1 a {
+  color:white;
+}
+.speakerbox {
+  background-color: transparent;
+  width:1000px;
+  text-align: center;
+  transform: translate(0%, 250%);
+}
+
+.japancover {
+  background-image: url("gallery/Japan2018HolidayCover.jpg");
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  background-position: right;
+}
+
+.containabout{
+  width: 600px;
+  background-color: transparent;
+  margin: 0 auto;
+  line-height: .7em;
+  align-items: center;
+  justify-content: center;
+}
+
+.abouttitle {
+  line-height: normal;
+  text-align: center;
+}
+.abouttext {
+  line-height:50px;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  border-radius:5px;
+}
+
+.contacttext {
+  line-height:50px;
+  padding: 10px;
+  font-size:30px;
+  text-align: center;
+  background-color: transparent;
+  border-radius:5px;
 }
