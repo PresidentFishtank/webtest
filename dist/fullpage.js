@@ -113,7 +113,7 @@
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
-            scrollBar: false,
+            scrollBar: false, //adding normal scrollbar//
             hybrid: false,
 
             //scrolling
@@ -237,6 +237,8 @@
         * Sets the autoScroll option.
         * It changes the scroll bar visibility and the history of the site as a result.
         */
+
+
         function setAutoScrolling(value, type){
             //removing the transformation
             if(!value){
@@ -841,7 +843,7 @@
             }
 
             if (typeof options.sectionsColor[index] !==  'undefined') {
-                css(section, {'background-color': options.sectionsColor[index]});
+                css(section, {'background-color': 'options.sectionsColor[index]'});
             }
 
             if (typeof options.anchors[index] !== 'undefined') {

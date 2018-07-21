@@ -15,6 +15,9 @@
  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89FFA9',endColorstr='#F15BFF' , GradientType=1);
 }
 
+a {
+  text-decoration: none;
+}
 .funpage {
   margin:0;
   padding:0;
@@ -134,6 +137,14 @@
   align-items: right;
   justify-content: right;
   background-position: right;
+  background-size: cover;
+
+}
+
+.speakerbox {
+  background-color: transparent;
+  width:1000px;
+  text-align: center;
 }
 
 .speakertitle {
@@ -146,12 +157,6 @@
 .intro h1 a {
   color:white;
 }
-.speakerbox {
-  background-color: transparent;
-  width:1000px;
-  text-align: center;
-  transform: translate(0%, 250%);
-}
 
 .japancover {
   background-image: url("gallery/Japan2018HolidayCover.jpg");
@@ -159,6 +164,17 @@
   align-items: right;
   justify-content: right;
   background-position: right;
+  background-size: cover;
+}
+
+.wallpapercover {
+  background-image: url("gallery/WallpaperCover.jpg");
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .containabout{
@@ -166,8 +182,6 @@
   background-color: transparent;
   margin: 0 auto;
   line-height: .7em;
-  align-items: center;
-  justify-content: center;
 }
 
 .abouttitle {
@@ -182,6 +196,13 @@
   border-radius:5px;
 }
 
+.contactbox {
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+
 .contacttext {
   line-height:50px;
   padding: 10px;
@@ -189,4 +210,12 @@
   text-align: center;
   background-color: transparent;
   border-radius:5px;
+}
+
+.maps {
+  position: absolute;
+  width:100%;
+  height: 40%;
+  bottom:0;
+  z-index:-1;
 }
