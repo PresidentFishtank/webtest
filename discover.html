@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Scrolling speed - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage demo scrolling speed." />
 	<meta name="keywords"  content="fullpage,jquery,demo,scrolling,speed,scrollingSpeed" />
 	<meta name="Resource-type" content="Document" />
@@ -17,6 +17,8 @@
 
 	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
 	<!--<link rel="stylesheet" type="text/css" href="examples.css" />-->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet'>
 
 	<style>
 
@@ -55,40 +57,59 @@
 </head>
   <body >
 		<div class="m-scene" id="">
-			<div class="menubar2 scene_element scene_element--fadein">
-				<div class="joinmenu">
-					<div class="minilogo"><a href="index.html"><img src="gallery/MiniLogo-01.png"></a></div>
-					<div class="menuoptions">
-						<a href="architecture.html">Architecture</a>
-						<a href="discover.html">Discover</a>
-						<a href="about.html">About</a>
-						<a href="contact.html">Contact</a>
-					</div>
+			<div class="menubar3 scene_element scene_element--fadein">
+				<div class="scene_element scene_element--fadein">
+					<div id="mySidenav" class="sidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	            <button class="dropbtn"><a href = "architecture.html">Architecture</a></button>
+	            <button class="dropbtn"><a href = "discover.html">Discover</a></button>
+	            <button class="dropbtn"><a href="about.html">About</a></button>
+	            <button class="dropbtn"><a href="contact.html">Contact</a></button>
+	              <!--<button class="dropbtn" onclick="myFunction()"><a>Architecture</a></button>
+	              <ul class="dropdown-content" id="myDropdown">
+	                  <li><a href="#">Home 1</a></li>
+	                  <li><a href="#">Home 2</a></li>
+	                  <li><a href="#">Home 3</a></li>
+	              </ul>
+	              <button class="dropbtn" onclick="myFunction2()"><a>Discover</a></button>
+	              <ul class="dropdown-content" id="myDropdown2">
+	                  <li><a href="#">CAD</a></li>
+	                  <li><a href="#">Home 2</a></li>
+	                  <li><a href="#">Home 3</a></li>
+	              </ul>
+	              <button class="dropbtn"><a href="about.html">About</a></button>
+	              <button class="dropbtn"><a href="contact.html">Contact</a></button>-->
+	        </div>
+
+	        <span style="font-size:30px;cursor:pointer;position:fixed;top:2%;right:3%;" onclick="openNav()">&#9776;</span>
 				</div>
 			</div>
 		<div id="fullpage" class="">
-			<div class="section scene_element scene_element--fadein indexbody" id="section0">
-				<div class="" >
-					<a href="index.html"><h1>Discover</h1></a>
-					<a href="#secondPage"><p>DIY</p></a>
-					<a href="#3rdPage"><p>Travel</p></a>
-					<a href="#4thPage"><p>Graphics</p></a>
+			<div class="section scene_element scene_element--fadein discoverwallpaper" id="section0">
+				<div class="mainbox">
+						<div class="op0"></div>
+						<div onclick="location.href='index.html'" class="op1"><a href="index.html"><p class="discoveroptions">Discover</p></a></div>
+						<div onclick="location.href='#secondPage'" class="op2"><a href="#secondPage"><p class="discoveroptions">+ Design</p></a></div>
+						<div onclick="location.href='#3rdPage'" class="op3"><a href="#3rdPage"><p class="discoveroptions">+ Travel</p></a></div>
+						<div onclick="location.href='#4thPage'" class="op4"><a href="#4thPage"><p class="discoveroptions">+ DIY</p></a></div>
 				</div>
-
 			</div>
-			<div class="section scene_element scene_element--fadein" id="section1">
-			    <div class="slide" id="slide1">
-					<div class="intro speakerbox">
-						<h1 class="speakertitle"><a href="discover\DIYspeakers.html">DIY</a></h1>
+			<div class="section scene_element scene_element--fadein wallpapercover" id="section1">
+				<div class="intro">
+					<h1><a href="index.html" style="color:rgb(203, 116, 61);">Design</a></h1>
+				</div>
+				<div class="grid">
+					<div class="designitem1">
+						<div class="item__details">
+							CAD
+						</div>
+					</div>
+					<div class="designitem2">
+						<div class="item__details">
+							Wallpaper
+						</div>
 					</div>
 				</div>
-
-			    <div class="slide scene_element scene_element--fadein" id="slide2">
-					<h1>Slide 2</h1>
-				</div>
-				<div class="slide scene_element scene_element--fadein" id="slide3">
-				<h1>Slide 3</h1>
-			</div>
 
 			</div>
 			<div class="section scene_element scene_element--fadein japancover" id="section2">
@@ -96,10 +117,19 @@
 					<h1><a href="discover\japan_2018.html">Travel</a></h1>
 				</div>
 			</div>
-			<div class="section scene_element scene_element--fadein wallpapercover" id="section3">
-				<div class="intro">
-					<h1><a href="index.html" style="color:rgb(203, 116, 61);">Graphics</a></h1>
+			<div class="section scene_element scene_element--fadein" id="section3">
+					<div class="slide" id="slide1">
+					<div class="intro speakerbox">
+						<h1 class="speakertitle"><a href="discover\DIYspeakers.html">DIY</a></h1>
+					</div>
 				</div>
+					<div class="slide scene_element scene_element--fadein" id="slide2">
+					<h1>Slide 2</h1>
+				</div>
+				<div class="slide scene_element scene_element--fadein" id="slide3">
+				<h1>Slide 3</h1>
+			</div>
+
 			</div>
 		</div>
 	</div>
@@ -125,6 +155,28 @@
             });
         </script>
 
+
+				<script>
+				function openNav() {
+						document.getElementById("mySidenav").style.width = "250px";
+				}
+
+				function closeNav() {
+						document.getElementById("mySidenav").style.width = "0";
+				}
+				</script>
+
+
+				<script>
+		    /* When the user clicks on the button,
+		    toggle between hiding and showing the dropdown content */
+		    function myFunction() {
+		        document.getElementById("myDropdown").classList.toggle("show");
+		    }
+		    function myFunction2() {
+		        document.getElementById("myDropdown2").classList.toggle("show");
+		    }
+		    </script>
 
   </body>
 </html>

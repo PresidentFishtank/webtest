@@ -47,26 +47,67 @@
   </head>
   <body class="indexbody">
     <div  class="m-scene" id="" >
-      <div class="menubar2 scene_element scene_element--fadein">
-        <div class="joinmenu">
-          <div class="minilogo"><a href="index.html"><img src="gallery/MiniLogo-01.png"></a></div>
-          <div class="menuoptions">
-            <a href="architecture.html">Architecture</a>
-            <a href="discover.html">Discover</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
+      <div class="scene_element scene_element--fadein">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="dropbtn"><a href = "architecture.html">Architecture</a></button>
+            <button class="dropbtn"><a href = "discover.html">Discover</a></button>
+            <button class="dropbtn"><a href="about.html">About</a></button>
+            <button class="dropbtn"><a href="contact.html">Contact</a></button>
+              <!--<button class="dropbtn" onclick="myFunction()"><a>Architecture</a></button>
+              <ul class="dropdown-content" id="myDropdown">
+                  <li><a href="#">Home 1</a></li>
+                  <li><a href="#">Home 2</a></li>
+                  <li><a href="#">Home 3</a></li>
+              </ul>
+              <button class="dropbtn" onclick="myFunction2()"><a>Discover</a></button>
+              <ul class="dropdown-content" id="myDropdown2">
+                  <li><a href="#">CAD</a></li>
+                  <li><a href="#">Home 2</a></li>
+                  <li><a href="#">Home 3</a></li>
+              </ul>
+              <button class="dropbtn"><a href="about.html">About</a></button>
+              <button class="dropbtn"><a href="contact.html">Contact</a></button>-->
         </div>
+
+        <span style="font-size:30px;cursor:pointer;position:fixed;top:1%;left:1%;" onclick="openNav()">&#9776;</span>
+
       </div>
-    <div class="links index" >
+
+    <div class="links index scene_element scene_element--fadein" >
       <div class="containabout">
         <h1 class="abouttitle">About</h1>
         <div class="abouttext scene_element scene_element--fadein">I'm an undergraduate student that will be specialising in architecture from September 2018 onwards. During my summer break, I decided to create this website as a means for me to record what I have done whether it is in the study of architecture or otherwise. Currently as architecture school has not yet started, I will be posting my other works instead. Cheers!</div>
       </div>
     </div>
+      </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    </script>
+
+
    </body>
 </html>
