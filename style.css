@@ -1142,7 +1142,7 @@ div div div img{
 .containergrid {
   position:relative;
   margin: 16%;
-  top: 100px;
+  top: 150px;
   display:grid;
   grid-template-columns: repeat(5,1fr);
   grid-auto-rows: 200px;
@@ -1168,7 +1168,7 @@ div div div img{
 }
 .containergrid div {
   background-size: cover;
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: span 2;
   cursor:pointer;
   background-position:center;
@@ -1176,7 +1176,7 @@ div div div img{
 
 .containergrid .words {
   background-size: cover;
-  grid-column: span 3;
+  grid-column: span 2;
   grid-row: span 2;
   cursor:pointer;
 }
