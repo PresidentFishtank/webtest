@@ -937,7 +937,7 @@ div div div img{
 .discoverwallpaper {
   background-size: cover;
   background-position: center;
-  background-image:url("C:/Users/nnasi/OneDrive/Documents/HTML/Tokyo, Japan 5-12 June 2018/IMG_20180606_035943.jpg")
+  background-image:url("https://presidentfishtank.github.io/webtest/gallery/IMG_20180606_035943.jpg")
 
 }
 
@@ -1163,7 +1163,7 @@ div div div img{
   justify-content: center;
   align-items: center;
   transform: translateZ(-1px) scale(2);
-  background:url("https://presidentfishtank.github.io/webtest/gallery/IMG_20180609_151522 (2).jpg");
+  background:url("https://presidentfishtank.github.io/webtest/gallery/starbucksopen.jpg");
   background-size: cover;
   background-position: center;
 }
