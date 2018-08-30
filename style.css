@@ -260,8 +260,8 @@ a {
   }
 
 .main-content {
-  top: 100%;
-  width:100%;
+  top: 95%;
+  width:98%;
   position:absolute;
   padding: 1%;
   flex: 1 1 80%;
@@ -290,17 +290,19 @@ a {
 
 .titlejapan {
   text-align: center;
-  font-size: 400%;
+  font-size: 4vw;
   font-family: sans-serif;
-  color:black;
+  color:red;
   top:50%;
   left:50%;
   position:absolute;
   transform: translate(-50%,-50%);
-  width:700px;
   padding:30px;
-  border-radius: 5px;
-  cursor: pointer;
+}
+
+.titlejapan div {
+  white-space: nowrap;
+  font-family: sans-serif;
 }
 
 .creditjapan {
@@ -792,12 +794,7 @@ div div div img{
   }
 
   .titlejapan {
-    grid-row: 3/4;
-    grid-column: span 10;
-    text-align: center;
-    font-size: 100%;
-    font-family: sans-serif;
-    color:black;
+    font-size: 7vw
   }
 }
 
