@@ -811,7 +811,7 @@ div div div img{
   }
 
   .contain{
-    transform:translate(-50%,-50%) scale(.45,.45);
+    transform:translate(-50%,-50%) scale(.41,.41);
   }
 }
 
