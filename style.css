@@ -215,23 +215,37 @@ a {
   line-height: .7em;
 }
 
+.containabout2{
+  width: 600px;
+  background-color: transparent;
+  margin: 0 auto;
+  line-height: .7em;
+  position:relative;
+}
+
 .abouttitle {
   line-height: normal;
   text-align: center;
+  background-color:;
 }
+
 .abouttext {
   line-height:50px;
   padding: 10px;
   text-align: center;
   background-color: transparent;
   border-radius:5px;
+  background-color:;
 }
 
 .contactbox {
     position: absolute;
+    z-index: -1;
     top:25%;
     left:50%;
-    transform:translate(-50%,0);
+    transform:translate(-50%,0%);
+    clear: both;
+    float: none;
 }
 
 .contacttext {
@@ -244,11 +258,13 @@ a {
 }
 
 .maps {
-  position: absolute;
-  width:100%;
+  position:absolute;
+  width:50%;
   height: 40%;
   bottom:0;
-  z-index:-1;
+  z-index:;
+  clear: both;
+  float: none;
 }
 
 .japangrid {
@@ -788,6 +804,22 @@ div div div img{
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  .op1 .discoveroptions {
+      font-size:750%;
+  }
+
+  .op2 .discoveroptions, .op3 .discoveroptions, .op4 .discoveroptions {
+    font-size: 200%
+  }
+
+  .speakertitle {
+    width: 40%;
+  }
+
+  .righted div p, .lefted div p {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -812,6 +844,44 @@ div div div img{
 
   .contain{
     transform:translate(-50%,-50%) scale(.41,.41);
+  }
+
+  .op1 .discoveroptions {
+      font-size:550%;
+  }
+
+  .op2 .discoveroptions, .op3 .discoveroptions, .op4 .discoveroptions {
+    font-size: 150%
+  }
+
+  .grid {
+    transform: scale(.75,.75);
+  }
+
+  .speakertitle {
+    width: 25%;
+  }
+
+  .slide {
+    background-position: 75% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .righted div p, .lefted div p {
+    font-size: 12px;
+  }
+
+  .containabout{
+    width: 80%;
+  }
+
+  .abouttext {
+    line-height:30px;
+  }
+
+  .contacttext {
+    font-size: 15px;
   }
 }
 
@@ -1176,7 +1246,7 @@ div div div img{
 
 .containergrid {
   position:relative;
-  margin: 16%;
+  margin: 10%;
   top: 150px;
   display:grid;
   grid-template-columns: repeat(5,1fr);
@@ -1201,6 +1271,10 @@ div div div img{
   background:url("https://presidentfishtank.github.io/webtest/gallery/starbucksopen.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.ParallaxContainer h1 {
+  font-size: 5vw;
 }
 .containergrid div {
   background-size: cover;
