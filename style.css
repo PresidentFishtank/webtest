@@ -208,15 +208,19 @@ a {
   background-size: cover;
 }
 
+.aboutbox {
+  position:absolute;
+  z-index: -1;
+}
 .containabout{
-  width: 600px;
+  max-width: 600px;
   background-color: transparent;
   margin: 0 auto;
   line-height: .7em;
 }
 
 .containabout2{
-  width: 600px;
+  max-width: 600px;
   background-color: transparent;
   margin: 0 auto;
   line-height: .7em;
@@ -959,9 +963,9 @@ div div div img{
 
 .speakerframe {
   margin: 0;
-  padding-left:25%;
-  padding-right:25%;
-  padding-top:10%;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:5%;
   padding-bottom:10%;
   top:100%;
   position: absolute;
@@ -1015,28 +1019,26 @@ div div div img{
 }
 
 .storyimg {
-  width:100%;
-  height: 50%;
+
   padding-bottom: 15px;
 }
 
 .storyimg img {
-  width:100%;
-  height:100%;
-  object-fit: fill;
+  max-height:400px;
+  max-width:100%
 }
 
 .conceptimg {
-  width:100%;
   background-color: gray;
 }
 
 .conceptimg img{
+  position:relative;
+  max-height:400px;
+  max-width:100%;
   display: block;
-  margin:auto;
-  object-fit: contain;
-  width:50%;
-  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .discoverwallpaper {
