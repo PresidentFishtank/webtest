@@ -785,6 +785,16 @@ div div div img{
   width: 25%;
 }
 
+@media only screen and (min-width: 1441px){
+  .projectnameleft, .projectnameright {
+    font-size:30px;
+  }
+
+  .projectdescription {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 1440px){
   .portfolio {
     display: grid;
@@ -792,6 +802,14 @@ div div div img{
     grid-template-rows: repeat(48, 50px);
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 4px;
+  }
+
+  .projectnameleft, .projectnameright {
+    font-size:30px;
+  }
+
+  .projectdescription {
+    font-size: 14px;
   }
 }
 
@@ -821,8 +839,12 @@ div div div img{
     width: 40%;
   }
 
-  .righted div p, .lefted div p {
-    font-size: 12px;
+  .projectdescription {
+    font-size: 14px;
+  }
+
+  .projectnameleft, .projectnameright {
+    font-size:30px;
   }
 }
 
@@ -872,10 +894,6 @@ div div div img{
     background-repeat: no-repeat;
   }
 
-  .righted div p, .lefted div p {
-    font-size: 12px;
-  }
-
   .containabout{
     width: 80%;
   }
@@ -886,6 +904,14 @@ div div div img{
 
   .contacttext {
     font-size: 15px;
+  }
+
+  .projectdescription {
+    font-size: 12px;
+  }
+
+  .projectnameleft, .projectnameright{
+    font-size:20px;
   }
 }
 
@@ -1345,22 +1371,22 @@ div div div img{
   color: gray
 }
 
-.righted div h3{
+.projectnameright{
   background-color:;
   float:none;
-  font-size:180%;
   font-family: 'Roboto Condensed';
+  font-weight: bold;
 }
 
-.righted div p {
-  font-family: 'Roboto Condensed';
-}
-
-.lefted div h3{
+.projectnameleft{
   text-align: right;
   background-color:;
   float:none;
-  font-size:180%;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+}
+
+.righted div p {
   font-family: 'Roboto Condensed';
 }
 
@@ -1383,4 +1409,44 @@ i {
     right:5;
     position:absolute;
     cursor: pointer;
+}
+
+.templategrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 3px;
+  padding: 3px;
+  background-color: gray;
+}
+
+.templategrid div {
+  background-color: red;
+}
+
+.puretextgrid {
+  position: relative;
+}
+
+.puretextgrid p {
+  margin:0;
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+}
+
+.test1 {grid-row: 2/2; grid-column: 2/2}
+
+@media only screen and (max-width: 600px){
+  .templategrid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 3px;
+    padding: 3px;
+    background-color: gray;
+  }
+
+  .test1 {grid-row: 3/3;grid-column: 1/1}
+
 }
