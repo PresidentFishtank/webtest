@@ -873,7 +873,7 @@ div div div img{
   }
 
   .op1 .discoveroptions {
-      font-size:550%;
+    font-size:450%;
   }
 
   .op2 .discoveroptions, .op3 .discoveroptions, .op4 .discoveroptions {
@@ -1166,11 +1166,18 @@ div div div img{
 .grid {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 200px;
   width: 430px;
   margin: auto;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    grid-gap: 5px;
+    width: 330px;
+  }
 }
 
 .designitem1, .designitem2 {
@@ -1319,7 +1326,7 @@ div div div img{
 }
 
 .archpic1 {
-  background:url(http://www.tokkoro.com/picsup/3062893-architectural-design_architecture_buildings_business_city_contemporary_expression_exterior_facade_futuristic_geometric_glass-windows_high_low-angle-shot_modern_modern-architecture_outdoors_perspe.jpg);
+  background:url('../gallery/Portfolio 20187.jpg');
 
 }
 
