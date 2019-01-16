@@ -1326,7 +1326,7 @@ div div div img{
 }
 
 .archpic1 {
-  background:url('../gallery/Portfolio 20187.jpg');
+  background:url('gallery/Portfolio 20187.jpg');
 
 }
 
@@ -1456,4 +1456,7 @@ i {
 
   .test1 {grid-row: 3/3;grid-column: 1/1}
 
+}
+
+.yaqzancontainer {
 }
